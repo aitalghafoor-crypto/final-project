@@ -1,0 +1,25 @@
+times = int(input("How many calculations do you want to perform? "))
+
+for i in range(times):
+
+    num1 = float(input("Pehla number: "))
+    num2 = float(input("Doosra number: "))
+    op = input("Operator (+, -, *, /): ")
+
+    if op == "+":
+        print("Result:", num1 + num2)
+
+    elif op == "-":
+        print("Result:", num1 - num2)
+
+    elif op == "*":
+        print("Result:", num1 * num2)
+
+    elif op == "/":
+        if num2 == 0:
+            print("Error: Division by zero is not allowed")
+        else:
+            print("Result:", num1 / num2)
+
+    else:
+        print("Error: Invalid operator")
